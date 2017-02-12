@@ -1,21 +1,107 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
 <head>
-<style type="text/css">
-	 header {
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
     text-align: center;
     background: url('https://kemiwrites.files.wordpress.com/2017/01/img_20170127_132319.jpg');
     background-size: cover;
     color: white;
     }
+    footer {
+      background-color: black;
+      height: 120px;
+      padding: 10px 0px 10px 10px;
+      font-family: helvetica;
+    }
+  img {
+    border-radius: 10px;
+    margin: 40px 0px 0px 0px;
+    border: 7px solid black;
+  }
+  li {
+    display: inline;
+    padding: 0px 10px 0px 10px;
+    font-family: helvetica;
+  }
+  a {
+    color: white;
+  }
+  ul {
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+  }
+  article {
+    max-width: 500px;
+    padding: 1px 20px 20px 20px;
+    margin: 0 auto;
+    font-family: helvetica;
+  }
+  h1 {
+    text-align: center;
+    font-family: helvetica;
+    padding: 
+  }
+  .video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+  @media (max-width: 500px) {
+    li {
+      display: block;
+      padding: 5px;
+    }
+  }
 </style>
 </head>
 <body>
 <header>
 <img src="https://s-media-cache-ak0.pinimg.com/736x/18/86/aa/1886aa1913745ae97ae50c0effdda082.jpg" height="175" width="175">
-</header>
+
 <p><h1>Kemi</h1><p>
-	<h1>Hello World</h1>
-	<p>I'm hosted with GitHub Pages. I am happy!</p>
+
+<ul>
+<li><a href="https://kemiwrites.wordpress.com/about/">About Me</a></li>
+<li><a href="https://kemiwrites.wordpress.com/">Writings</a></li>
+<li><a href="https://kemiwrites.wordpress.com/category/podcasts/">Podcasts</a></li>
+<li><a href="https://kemiwrites.wordpress.com/about/">Contact</a></li>
+</ul>
+</header>
+<article>
+<h2><b>Welcome to Rhianna Kemi!</b></h2>
+<p>My name is Rhianna Kemi and I am 22 year old London-based NGO worker, with a love for politics, conversations and books.</p>
+<h3>Get in touch</h3>
+<p>You can reach me on rhianna.ilube@africangifted.org</p>
+<h3>Song of the week!</h3>
+<div class="video-container">
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/Ns_0zp00UQk">
+</iframe>
+</div>
+<p><button>Like</button></p>
+</article>
+<footer>
+<div style="color:white">
+<p>rhianna.ilube@africangifted.org</p>
+<p><a href="https://www.instagram.com/rhiannakemi/">@rhiannakemi</a></p>
+<p style="font-size:12">&copy; 2017 Rhianna Ilube</p>
+</div>
+</footer>
 </body>
+<script>
+$("button").on("click", function(){ alert("You have liked Skwod by Nadia Rose!")
+});
+</script>
 </html>
